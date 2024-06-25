@@ -1,0 +1,137 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  font-family: 'Poppins', sans-serif;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #1b1a1a;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.Nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.nav-item {
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.navid {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border: none;
+  background: linear-gradient(135deg, #007bff, #00d4ff);
+  color: white;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  left: 450%;
+}
+
+button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.emailList {
+  list-style: none;
+  padding: 0;
+}
+
+.emailList li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgb(210, 208, 208);
+}
+
+.emailList li p {
+  font-size: 13px;
+  color: #555;
+}
+
+.emailList li:hover {
+  background-color: rgb(247, 245, 245);
+}
+
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+    width: 100%;
+    max-width: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    height: auto;
+  }
+
+  .nav-item {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+
+  button {
+    left: auto;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navid {
+    margin-left: 0;
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 5px;
+  }
+
+  .nav-item {
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .navid {
+    font-size: 18px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+strong {
+  color: black;
+}
