@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 
 const Task = () => {
   const [items, setItems] = useState([
-    { id: 1, text: '1', isChecked: false },
-    { id: 2, text: '2', isChecked: false },
-    { id: 3, text: '3', isChecked: false },
+    { id: 1, text: 'Html css', isChecked: false },
+    { id: 2, text: 'Javascript', isChecked: false },
+    { id: 3, text: 'React', isChecked: false },
   ]);
 
   const handleCheckboxChange = (id) => {
@@ -19,9 +19,11 @@ const Task = () => {
 
   return (
     <div>
-      {items.map(item => (
+    
+         <h1>Checkbox List with Conditional Delete Button</h1>
+          {items.map(item => (
         <div key={item.id} style={{ display: 'flex', alignItems: 'center', marginBottom: '8px' }}>
-          <input 
+       <input 
             type="checkbox" 
             checked={item.isChecked} 
             onChange={() => handleCheckboxChange(item.id)} 
@@ -31,6 +33,7 @@ const Task = () => {
             <button onClick={() => handleDelete(item.id)}>Delete</button>
           )}
         </div>
+       
       ))}
     </div>
   );
